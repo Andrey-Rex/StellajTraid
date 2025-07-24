@@ -1,0 +1,107 @@
+/* Секция "Отзывы клиентов" */
+        .reviews-section {
+            background-color: var(--color-light);
+            /* padding-bottom: 80px; */
+            padding: 0 0 80px 0;
+        }
+
+        #reviews-heading {
+                max-width: 670px;
+    margin-left: 10px;
+        }
+        .reviews-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 60px;
+        }
+        
+        .reviews-label {
+            font-size: var(--fs-small);
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            color: var(--color-dark);
+        }
+        
+        .reviews-title {
+            font-size: var(--fs-xxl);
+            font-weight: 600;
+            color: var(--color-dark);
+            text-transform: uppercase;
+            max-width: 600px;
+        }
+        
+        .reviews-slider-container {
+            position: relative;
+            padding: 0;
+            width: 100%;
+            overflow: hidden;
+        }
+        
+        .review-card {
+            width: 100%;
+            max-width: 680px;
+            height: 300px;
+            background: var(--color-white);
+            border-radius: var(--radius-xl);
+            padding: 20px;
+            box-shadow: var(--shadow-card);
+            display: flex;
+            transition: box-shadow var(--transition-normal);
+        }
+        
+        .review-card:hover {
+            box-shadow: var(--shadow-card-hover);
+        }
+        
+        .review-photo {
+            width: 197px;
+            height: 260px;
+            border-radius: var(--radius-md);
+            overflow: hidden;
+            flex-shrink: 0;
+        }
+        
+        .review-photo img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        
+        .review-content {
+            flex: 1;
+            padding-left: 20px;
+            display: flex;
+            flex-direction: column;
+        }
+        
+        .review-text {
+            font-size: 18px;
+            line-height: 1.6;
+            color: var(--color-dark);
+            flex-grow: 1;
+            overflow: hidden;
+            position: relative;
+        }
+        
+        .review-text p {
+            margin-bottom: 15px;
+        }
+        
+        .review-client {
+            margin-top: 15px;
+            padding-top: 15px;
+            border-top: 1px solid rgba(0, 0, 0, 0.1);
+        }
+        
+        .client-name {
+            font-weight: 600;
+            font-size: var(--fs-base);
+            color: var(--color-dark);
+        }
+        
+        .client-position {
+            font-size: var(--fs-small);
+            color: var(--color-dark-secondary);
+        }
