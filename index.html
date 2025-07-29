@@ -1,0 +1,977 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Производство и монтаж складских стеллажей под ключ">
+    <title>STELLAJI - Складские стеллажи от проекта до монтажа</title>
+    <link rel="stylesheet" href="normalize.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+    
+</head>
+<body>
+    <!-- Шапка сайта -->
+    <header id="header" class="header" role="banner">
+        <!-- Бургер меню -->
+            <button class="burger" id="burgerBtn" aria-label="Открыть меню" aria-expanded="false">
+                <span class="burger__line"></span>
+                <span class="burger__line"></span>
+                <span class="burger__line"></span>
+            </button>
+        </div>
+        <div class="header__container">
+            <a href="#" class="logo" aria-label="STELLAJI - главная страница">
+                <img src="images/logo.svg" alt="STELLAJI" width="154" height="58">
+            </a>
+            <!-- обертка внутренняя хэдера -->
+             <div class="header-inner-wrapper">
+<!-- Десктопное меню -->
+            <nav class="nav nav--desktop" aria-label="Основная навигация">
+                <ul class="nav__list">
+                    <li><a href="#services" class="nav__link">Услуги</a></li>
+                    <!-- <li><a href="#racks" class="nav__link">Виды стеллажей</a></li> -->
+                    <li><a href="#projects" class="nav__link">Наши проекты</a></li>
+                    <li><a href="#about" class="nav__link">О компании</a></li>
+                    <!-- <li><a href="#reviews" class="nav__link">Отзывы</a></li> -->
+                    <li><a href="#footer" class="nav__link">Контакты</a></li>
+                </ul>
+            </nav>
+            
+            <!-- Контакты и соцсети -->
+            <div class="contacts">
+                <!-- <div class="social-links">
+                    <a href="#" class="social-link--viber social-link-header" aria-label="Viber">
+                        <i class="fab fa-viber"></i>
+                    </a>
+                    <a href="#" class="social-link--telegram social-link-header" aria-label="Telegram">
+                        <i class="fab fa-telegram"></i>
+                    </a>
+                    <a href="#" class="social-link--whatsapp social-link-header" aria-label="WhatsApp">
+                        <i class="fab fa-whatsapp"></i>
+                    </a>
+                </div> -->
+                
+                <a href="mailto:info@stellaji.ru" class="contact-item-header">
+                    <span class="contact-item-icon" aria-hidden="true">
+                        <img src="/images/Mail.svg" alt="mail logo"></span>
+                    <span class="mail-text">info@stellaji.ru</span>
+                </a>
+                
+                <a href="tel:+79991234567" class="contact-item-header">
+                    <span class="contact-item-icon" aria-hidden="true">
+                        <img src="/images/Phone.svg" alt="phone logo">
+                    </span>
+                    <span class="phone-text">+7 (999) 123-45-67</span>
+                </a>
+            </div>
+            
+            <!-- Кнопка заявки -->
+            <a href="#contact-form" class="btn btn--primary btn--header">Оставить заявку</a>
+            
+             </div>
+            
+            
+    </header>
+    
+    <!-- Мобильное меню (скрыто по умолчанию) -->
+    <div class="mobile-menu" id="mobileMenu" aria-hidden="true">
+        <button class="close-btn" aria-label="Закрыть меню">&times;</button>
+        <nav class="nav" aria-label="Мобильная навигация">
+            <ul class="nav__list">
+                <li><a href="#services" class="nav__link">Услуги</a></li>
+                <!-- <li><a href="#racks" class="nav__link">Виды стеллажей</a></li> -->
+                <li><a href="#projects" class="nav__link">Наши проекты</a></li>
+                <li><a href="#about" class="nav__link">О компании</a></li>
+                <!-- <li><a href="#reviews" class="nav__link">Отзывы</a></li> -->
+                <li><a href="#footer" class="nav__link">Контакты</a></li>
+            </ul>
+        </nav>
+    </div>
+    
+    <!-- Главная секция -->
+    <main>
+        <section class="hero" aria-labelledby="hero-heading">  
+            <div class="section-container hero-container">
+                <div class="hero__content">
+                    <p class="hero__subtitle">НАДЁЖНОСТЬ И ЭФФЕКТИВНОСТЬ КЛЮЧЕВЫЕ ФАКТОРЫ УСПЕХА</p>
+                    <h1 id="hero-heading" class="hero__title">
+                        <span>СКЛАДСКИЕ СТЕЛЛАЖИ —</span>
+                        <span>ОТ ПРОЕКТА ДО МОНТАЖА</span>
+                    </h1>
+                    <p class="hero__description">Складские стеллажи под ключ. Широкая география поставок и большой ассортимент стеллажей для любых нужд.</p>
+                    <a href="#contact-form" class="btn btn--primary btn--large hero-btn">Заказать бесплатную консультацию</a>
+                </div>
+            </div>
+            <div class="hero-bottom-logo">
+                <img src="images/СтеллажТрейд.png" alt="" class="hero-bottom-logo-img">
+            </div>
+        
+        </section>
+
+        <!-- Секция услуг -->
+        <section id="services" class="section section--light" aria-labelledby="services-heading">
+            <div class="section-container">
+                <div class="section-header services-header section-heading-inner-wrapper">
+                    <span class="section-label">услуги</span>
+                    <div class="header-content">
+                        <h2 id="services-heading" class="section-title">Наши Услуги — Комплексный Подход</h2>
+                        <p class="section-subtitle">Предлагаем полный цикл услуг от идеи до рабочего склада.</p>
+                    </div>
+                </div>
+                
+                <div class="services-grid">
+                    <!-- Карточка 1 -->
+                    <article class="service-card">
+                        <div class="card__icon" aria-hidden="true">
+                            <img src="images/projekting.svg" alt="projecting Icon">
+                        </div>
+                        <h3 class="card__title">Проектирование</h3>
+                        <p class="card__description">Разработаем оптимальную схему размещения стеллажей, учитывая специфику вашего груза, площади и логистики.</p>
+                    </article>
+                    
+                    <!-- Карточка 2 -->
+                    <article class="service-card">
+                        <div class="card__icon" aria-hidden="true">
+                            <img src="images/delivery.svg" alt="delivery Icon">
+                        </div>
+                        <h3 class="card__title">Поставка</h3>
+                        <p class="card__description">Прямые поставки с заводов-изготовителей в минимальные сроки</p>
+                    </article>
+                    
+                    <!-- Карточка 3 -->
+                    <article class="service-card">
+                        <div class="card__icon" aria-hidden="true">
+                            <img src="images/montaj.svg" alt="montaj Icon">
+                        </div>
+                        <h3 class="card__title">Монтаж</h3>
+                        <p class="card__description">Опытные бригады. Строгое соблюдение ГОСТов и норм безопасности и соответсвие проекта.</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Секция "Виды стеллажей" -->
+        <section id="racks" class="section section--light" aria-labelledby="racks-heading">
+            <div class="section-container">
+                <!-- <div class="racks-info-wrapper">
+
+                    
+                </div> -->
+                
+                <div class="racks-section">
+                    <!-- Левая колонка (фиксированная) -->
+                    <div class="racks-info">
+                        <span class="section-label racks-label">виды стеллажей</span>
+                        <div class="racks-description-wrapper">
+                            <p class="racks-description section-title">Мы предлагаем любые модели стеллажей для вашего бизнеса</p>
+                            <a href="#contact-form" class="racks-btn btn">Оставить заявку</a>
+                        </div>
+                    </div>
+                    
+                    <!-- Правая колонка (прокручиваемая) -->
+                    <div class="racks-cards-container">
+                        <!-- Карточка 1 -->
+                        <div class="rack-card">
+                            <div class="rack-card-content">
+                                <h3 class="rack-card-title">Полочные стеллажи</h3>
+                                <p class="rack-card-text">Классическое и универсальное решение, подходящее для хранения широкого ассортимента товаров в коробках, контейнерах или без упаковки. Регулируемая высота полок позволяет адаптировать конструкцию под различные габариты продукции.</p>
+                            </div>
+                            <div class="rack-card-image">
+                                <img src="images/polochnij.jpg" alt="Полочные стеллажи">
+                            </div>
+                        </div>
+                        
+                        <!-- Карточка 2 -->
+                        <div class="rack-card">
+                            <div class="rack-card-content">
+                                <h3 class="rack-card-title">Фронтальные стеллажи</h3>
+                                <p class="rack-card-text">Предназначены для хранения грузов на паллетах, обеспечивая удобную погрузку и разгрузку с помощью вилочных погрузчиков. Идеальны для складских комплексов, логистических центров и производственных предприятий.</p>
+                            </div>
+                            <div class="rack-card-image">
+                                <img src="images/front.jpg" alt="Фронтальные стеллажи">
+                            </div>
+                        </div>
+                        
+                        <!-- Карточка 3 -->
+                        <div class="rack-card">
+                            <div class="rack-card-content">
+                                <h3 class="rack-card-title">Мезонинные стеллажи</h3>
+                                <p class="rack-card-text">Это многоуровневые стеллажные системы полочного или платформенного вида, предназначенные для хранения товаров различного назначения. Многоэтажная конструкция позволяет эффективно использовать площадь складского помещения. Разные уровни мезонина соединяются с помощью лестниц или целых лестничных пролётов. Такая стеллажная система является сборно-разборной, легко монтируется и может быть изменена под новые виды грузов в короткий срок.</p>
+                            </div>
+                            <div class="rack-card-image">
+                                <img src="images/mezon.jpg" alt="Мезонинные стеллажи">
+                            </div>
+                        </div>
+                        
+                        <!-- Карточка 4 -->
+                        <div class="rack-card">
+                            <div class="rack-card-content">
+                                <h3 class="rack-card-title">Набивные (глубинные) стеллажи</h3>
+                                <p class="rack-card-text">Эти стеллажи идеально подходит для предприятий с ограниченным пространством и необходимостью хранения больших объёмов одинаковых и однотипных грузов с высокой плотностью.</p>
+                            </div>
+                            <div class="rack-card-image">
+                                <img src="images/nabiv.jpg" alt="Набивные стеллажи">
+                            </div>
+                        </div>
+                        
+                        <!-- Карточка 5 -->
+                        <div class="rack-card">
+                            <div class="rack-card-content">
+                                <h3 class="rack-card-title">Консольные стеллажи</h3>
+                                <p class="rack-card-text">Оптимальный вариант для хранения длинномерных грузов, таких как трубы, профили, доски, рулоны ткани и многое другое. Конструкция обеспечивает удобный доступ к каждой единице продукции.</p>
+                            </div>
+                            <div class="rack-card-image">
+                                <img src="images/console.jpg" alt="Консольные стеллажи">
+                            </div>
+                        </div>
+                        
+                        <!-- Карточка 6 -->
+                        <!-- <div class="rack-card">
+                            <div class="rack-card-content">
+                                <h3 class="rack-card-title">Гравитационные стеллажи</h3>
+                                <p class="rack-card-text">Автоматизированные системы хранения с роликовыми дорожками, обеспечивающие принцип FIFO (первым пришел - первым ушел). Идеальны для складов с высокой оборачиваемостью товаров.</p>
+                            </div>
+                            <div class="rack-card-image">
+                                <img src="images/rack6.png" alt="Гравитационные стеллажи">
+                            </div>
+                        </div> -->
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Секция "Наши преимущества" -->
+        <section id="benefits" class="section section--light" aria-labelledby="benefits-heading">
+            <div class="section-container">
+                <div class="section-header section-heading-inner-wrapper">
+                    <span class="section-label">Наши преимущества</span>
+                    <div class="header-content">
+                        <h2 id="benefits-heading" class="section-title">Минимизация рисков и соответствие вашим запросам — ваши главные выгоды</h2>
+                        <p class="section-subtitle"></p>
+                    </div>
+                </div>
+                
+                <div class="benefits-grid">
+                    <!-- Карточка 1 -->
+                    <article class="benefit-card">
+                        <div class="benefit-icon">
+                            <img src="images/quick.svg" alt="quick Icon">
+                        </div>
+                        <h3 class="benefit-title">Надёжность</h3>
+                        <p class="benefit-description">Используем сертифицированные материалы и проверенные технологии производства</p>
+                    </article>
+                    
+                    <!-- Карточка 2 -->
+                    <article class="benefit-card">
+                        <div class="benefit-icon">
+                            <img src="images/safety.svg" alt="safety Icon">
+                        </div>
+                        <h3 class="benefit-title">Эффективность</h3>
+                        <p class="benefit-description">Оптимизируем складские площади и повышаем производительность логистики</p>
+                    </article>
+                    
+                    <!-- Карточка 3 -->
+                    <article class="benefit-card">
+                        <div class="benefit-icon">
+                            <img src="images/carense.svg" alt="carense Icon">
+                        </div>
+                        <h3 class="benefit-title">Индивидуальность</h3>
+                        <p class="benefit-description">Разрабатываем решения под конкретные задачи и особенности вашего склада</p>
+                    </article>
+                    
+                    <!-- Карточка 4 -->
+                    <article class="benefit-card">
+                        <div class="benefit-icon">
+                            <img src="images/price.svg" alt="price Icon">
+                        </div>
+                        <h3 class="benefit-title">Поддержка</h3>
+                        <p class="benefit-description">Обеспечиваем техническое сопровождение и консультации на всех этапах</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Секция "Наши проекты" -->
+        <section id="projects" class="section section--light" aria-labelledby="projects-heading">
+            <div class="section-container">
+                <div class="section-header section-heading-inner-wrapper">
+                    <h2 id="projects-heading" class="section-label ">Наши проекты</h2>
+                    <div class="header-content">                        
+                        <p class="section-subtitle section-title-projects section-title">Склады, Которым Можно Доверять. От идеи до рабочего склада: полный цикл услуг</p>
+                    </div>
+                </div>
+                
+                <div class="projects-section">
+                    <div class="project-slider-container">
+                        <div class="swiper">
+                            <div class="swiper-wrapper">
+                                <!-- Слайд 1 -->
+                                <div class="swiper-slide">
+                                    <article class="project-slide">
+                                        <div class="project-image">
+                                            <img src="images/project1.png" alt="Складской комплекс">
+                                        </div>
+                                        <div class="project-content">
+                                            <!-- <h3 class="project-title"></h3> -->
+                                            <p class="project-description">Дистрибьютор автозапчастей</p>
+                                        </div>
+                                    </article>
+                                </div>
+                                
+                                <!-- Слайд 2 -->
+                                <div class="swiper-slide">
+                                    <article class="project-slide">
+                                        <div class="project-image">
+                                            <img src="images/project2.png" alt="Производственное предприятие">
+                                        </div>
+                                        <div class="project-content">
+                                            <!-- <h3 class="project-title">Производственное предприятие "ТехноПром"</h3> -->
+                                            <p class="project-description">Склад готовой продукции</p>
+                                        </div>
+                                    </article>
+                                </div>
+                                
+                                <!-- Слайд 3 -->
+                                <div class="swiper-slide">
+                                    <article class="project-slide">
+                                        <div class="project-image">
+                                            <img src="images/project3.jpg" alt="Фармацевтический склад">
+                                        </div>
+                                        <div class="project-content">
+                                            <!-- <h3 class="project-title">Фармацевтический склад "ФармЛогист"</h3> -->
+                                            <p class="project-description">Создание системы хранения с соблюдением температурного режима</p>
+                                        </div>
+                                    </article>
+                                </div>
+                                
+                                <!-- Слайд 4 -->
+                                <div class="swiper-slide">
+                                    <article class="project-slide">
+                                        <div class="project-image">
+                                            <img src="images/project4.jpg" alt="Торговый центр">
+                                        </div>
+                                        <div class="project-content">
+                                            <!-- <h3 class="project-title">Торговый центр "МегаМолл"</h3> -->
+                                            <p class="project-description">Обустройство складского помещения для розничной сети</p>
+                                        </div>
+                                    </article>
+                                </div>
+                                
+                                <!-- Слайд 5 -->
+                                <div class="swiper-slide">
+                                    <article class="project-slide">
+                                        <div class="project-image">
+                                            <img src="images/project5.jpg" alt="Автоцентр">
+                                        </div>
+                                        <div class="project-content">
+                                            <h3 class="project-title">Автоцентр "МоторСити"</h3>
+                                            <p class="project-description">Стеллажи для хранения автозапчастей и шин</p>
+                                        </div>
+                                    </article>
+                                </div>
+                                
+                                <!-- Слайд 6 -->
+                                <div class="swiper-slide">
+                                    <article class="project-slide">
+                                        <div class="project-image">
+                                            <img src="images/project6.jpg" alt="Пищевое производство">
+                                        </div>
+                                        <div class="project-content">
+                                            <h3 class="project-title">Пищевое производство "ВкусВилл"</h3>
+                                            <p class="project-description">Специализированные стеллажи для хранения пищевых продуктов</p>
+                                        </div>
+                                    </article>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Секция "О нас" -->
+        <section id="about" class="section section--light" aria-labelledby="about-heading">
+            <div class="section-container">
+                <!-- Верхний заголовок секции: "О НАС" слева, "Фундамент надежности" справа -->
+                <div class="about-header section-heading-inner-wrapper">
+                    <span class="section-label">О НАС</span>
+                    <h2 id="about-heading" class="about-tagline header-content">Фундамент надежности</h2>
+                </div>
+                
+                <!-- Основной блок с текстом и фото -->
+                <div class="about-content">
+                    <div class="about-text">
+                        <p>Стеллаж Трейд — официальный дилер крупнейших заводов‑производителей стеллажных систем.</p>
+                        <p>Наша цель — предоставить вам надёжные, долговечные и эффективные решения для вашего склада, которые помогут оптимизировать логистические процессы и повысить прибыльность вашего бизнеса. Обратитесь к нам сегодня, и мы поможем вам создать идеальный склад!</p>
+                        <p>Наш опыт — это гарантия вашей уверенности в каждом стеллаже.</p>
+                    </div>
+                    <div class="about-image">
+                        <img src="images/about-company1.png" alt="Наша компания">
+                    </div>
+                </div>
+                
+                <!-- Блок с цитатой и фото -->
+                <div class="quote-block">
+                    <div class="quote-image">
+                        <img src="images/about-company2.png" alt="Надежда, директор компании">
+                    </div>
+                    <div class="quote-text">
+                        <p>«Я, Надежда…, как директор компании, могу с уверенностью сказать: надёжность — это не просто обещание, это фундамент всего, что мы делаем. От первого звонка до финального монтажа мы строим не просто стеллажи, мы строим доверие.</p>
+                        <p>Именно поэтому мы работаем быстро, профессионально и без лишней бюрократии. Ведь для нас каждый клиент — это надежда на долгосрочное партнёрство».</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Секция "Отзывы клиентов" -->
+        <!-- <section id="reviews" class="reviews-section" aria-labelledby="reviews-heading">
+            <div class="section-container">
+                <div class="section-header">
+                    <span class="section-label">ОТЗЫВЫ клиентов</span>
+                    <div class="header-content">
+                        <h2 id="reviews-heading" class="section-title">наши клиенты доверяют нам!</h2> -->
+                        <!-- <p class="section-subtitle">Реальные отзывы от наших партнеров</p> -->
+                    <!-- </div>
+                </div>
+                
+                <div class="reviews-slider-container">
+                    <div class="swiper">
+                        <div class="swiper-wrapper"> -->
+                            <!-- Отзыв 1 -->
+                            <!-- <div class="swiper-slide">
+                                <article class="review-card">
+                                    <div class="review-photo">
+                                        <img src="images/review1.jpg" alt="Клиент компании">
+                                    </div>
+                                    <div class="review-content">
+                                        <div class="review-text">
+                                            <p>Компания STELLAJI произвела на нас отличное впечатление с самого первого контакта. Они разработали для нашего склада систему стеллажей, которая идеально соответствует нашим потребностям.</p>
+                                            <p>Монтаж был выполнен в срок и с высочайшим профессионализмом. Особенно хочу отметить качество материалов и внимание к деталям.</p>
+                                            <p>За полгода эксплуатации ни одного нарекания - всё работает безупречно. Сотрудничество с STELLAJI - это пример того, как должны работать профессионалы!</p>
+                                        </div>
+                                        <div class="review-client">
+                                            <div class="client-name">Ирина Петрова</div>
+                                            <div class="client-position">Директор по логистике, ООО "ТрансЛогистик"</div>
+                                        </div>
+                                    </div>
+                                </article>
+                            </div> -->
+                            
+                            <!-- Отзыв 2 -->
+                            <!-- <div class="swiper-slide">
+                                <article class="review-card">
+                                    <div class="review-photo">
+                                        <img src="images/review2.jpg" alt="Клиент компании">
+                                    </div>
+                                    <div class="review-content">
+                                        <div class="review-text">
+                                            <p>Мы обратились в STELLAJI для реконструкции нашего складского комплекса. Результат превзошёл все ожидания! Команда предложила инновационное решение.</p>
+                                            <p>Проектировщики учли все наши пожелания и специфику хранения товаров. Монтажные работы были выполнены в кратчайшие сроки без нарушения рабочего процесса.</p>
+                                            <p>Качество стеллажей - на высшем уровне. За год эксплуатации не возникло ни одной проблемы. Сотрудники отмечают удобство работы с новой системой хранения.</p>
+                                        </div>
+                                        <div class="review-client">
+                                            <div class="client-name">Александр Иванов</div>
+                                            <div class="client-position">Генеральный директор, "Складские Решения"</div>
+                                        </div>
+                                    </div>
+                                </article>
+                            </div> -->
+                            <!-- Отзыв 3 -->
+                            <!-- <div class="swiper-slide">
+                                <article class="review-card">
+                                    <div class="review-photo">
+                                        <img src="images/review3.jpg" alt="Клиент компании">
+                                    </div>
+                                    <div class="review-content">
+                                        <div class="review-text">
+                                            <p>STELLAJI - это команда настоящих профессионалов! Они помогли нам организовать систему хранения для фармацевтического склада с соблюдением всех требований.</p>
+                                            <p>Особенно впечатлило внимание к деталям: стеллажи спроектированы с учётом специфики товаров, обеспечен удобный доступ. Монтаж был выполнен аккуратно и в срок.</p>
+                                            <p>Спустя год эксплуатации могу уверенно сказать - это одно из лучших вложений в наш бизнес. Система работает безупречно, персонал доволен.</p>
+                                        </div>
+                                        <div class="review-client">
+                                            <div class="client-name">Ольга Смирнова</div>
+                                            <div class="client-position">Операционный директор, "ФармСклад"</div>
+                                        </div>
+                                    </div>
+                                </article>
+                            </div>
+                             -->
+                            <!-- Отзыв 4 -->
+                            <!-- <div class="swiper-slide">
+                                <article class="review-card">
+                                    <div class="review-photo">
+                                        <img src="images/review4.jpg" alt="Клиент компании">
+                                    </div>
+                                    <div class="review-content">
+                                        <div class="review-text">
+                                            <p>Как владелец сети строительных магазинов, я высоко ценю качество и надёжность. STELLAJI полностью оправдали наши ожидания!</p>
+                                            <p>Стеллажные системы выдерживают значительные нагрузки и обеспечивают удобную логистику. Хочу отметить гибкость команды - они смогли адаптировать решения под наши требования.</p>
+                                            <p>За два года эксплуатации не было ни одной поломки или проблемы. Это говорит о высоком качестве материалов и профессиональном монтаже.</p>
+                                        </div>
+                                        <div class="review-client">
+                                            <div class="client-name">Дмитрий Козлов</div>
+                                            <div class="client-position">Владелец сети "Строительный Двор"</div>
+                                        </div>
+                                    </div>
+                                </article>
+                            </div>
+                             -->
+                            <!-- Отзыв 5 -->
+                            <!-- <div class="swiper-slide">
+                                <article class="review-card">
+                                    <div class="review-photo">
+                                        <img src="images/review5.jpg" alt="Клиент компании">
+                                    </div>
+                                    <div class="review-content">
+                                        <div class="review-text">
+                                            <p>Мы сотрудничаем с STELLAJI уже более трёх лет и каждый раз убеждаемся в правильности выбора партнёра. Для нашего логистического центра они разработали и установили многоуровневую систему.</p>
+                                            <p>Профессионализм команды проявляется во всём: от точного расчёта нагрузок до аккуратного монтажа. Все работы выполнены качественно и в срок.</p>
+                                            <p>Благодаря решениям от STELLAJI, мы смогли оптимизировать складские процессы и увеличить эффективность работы на 25%.</p>
+                                        </div>
+                                        <div class="review-client">
+                                            <div class="client-name">Сергей Волков</div>
+                                            <div class="client-position">Директор по развитию, "Логистик Групп"</div>
+                                        </div>
+                                    </div>
+                                </article>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section> -->
+
+         <!-- Секция "Оставьте заявку" -->
+        <section id="contact-form" class="contact-section" aria-labelledby="contact-heading">
+            <div class="section-container">
+                <div class="contact-container">
+                    <!-- Левая часть: текстовые блоки -->
+                    <div class="contact-info section-heading-inner-wrapper">
+                        <span class="contact-label">Оставьте заявку</span>
+                        <div class="contact-info-inner-wrapper">
+                            <h2 id="contact-heading" class="contact-title section-title">Свяжитесь с Нами – Получите Расчет Вашего Проекта!</h2>
+                            <p class="contact-subtitle">Менеджеры компании ответят на ваши вопросы и произведут расчёт стоимости услуг и подготовят индивидуальное коммерческое предложение.</p></div>
+                        
+                    </div>
+                    
+                    <!-- Правая часть: форма -->
+                    <div class="contact-form-wrapper">
+                        <p class="form-intro">Оставьте заявку, и наш специалист свяжется с вами для бесплатной консультации.</p>
+                        <form id="application-form">
+                            <div class="form-group">
+                                <input type="text" 
+                                       class="form-input" 
+                                       placeholder="Ваше имя" 
+                                       disabled
+                                       required>
+                            </div>
+                            <div class="form-group">
+                                <input type="tel" 
+                                       class="form-input" 
+                                       placeholder="Номер телефона" 
+                                       disabled
+                                       required>
+                            </div>
+                            <div class="agreement-container">
+                                <div class="custom-checkbox" id="agreement-checkbox"></div>
+                                <p class="agreement-text">Нажимая на кнопку, вы соглашаетесь с 
+                                    <a href="#" class="agreement-link">Политикой конфиденциальности </a>и  
+                                    <a href="#" class="agreement-link"> Правилами обработки персональных данных</a>.
+                                </p>
+                            </div>
+                            <button type="submit" class="submit-btn" disabled>Оставить заявку</button>
+                        </form>
+                    </div>
+                </div>
+                
+                <div id="success-popup" class="popup-overlay">
+                    <div class="popup-content">
+                        <p>Заявка успешно отправлена! Наш менеджер свяжется с вами в ближайшее время.</p>
+                        <button id="popup-close-btn">Закрыть</button>
+                    </div>
+                </div>
+
+
+
+
+            </div>
+        </section>
+    </main>
+
+    <!-- Футер сайта -->
+    <footer id="footer" class="footer">
+        <div class="footer-container">
+            <!-- Верхняя часть футера -->
+            <div class="footer-top">
+                <!-- Колонка 1: Логотип -->
+                <div class="footer-column">
+                    <a href="#" class="footer-logo">
+                        <img src="images/logo.svg" alt="logo stellajtraid">
+                    </a>
+                </div>
+                
+                <!-- Колонка 2: Меню -->
+                <div class="footer-column">
+                    <ul class="footer-menu">
+                        <li><a href="#services">Услуги</a></li>
+                        <li><a href="#racks">Виды стеллажей</a></li>
+                        <li><a href="#projects">Наши проекты</a></li>
+                        <li><a href="#about">О компании</a></li>
+                        <!-- <li><a href="#reviews">Отзывы</a></li> -->
+                        <!-- <li><a href="#contact-form">Оставить заявку</a></li> -->
+                    </ul>
+                </div>
+                
+                <!-- Колонка 3: Контакты и соцсети -->
+                <div class="footer-column">
+                    <h3 class="contact-title-footer">Наши контакты</h3>
+                    <ul class="footer-contacts">
+                        <a href="tel:+79991234567" class="contact-item contact-item-footer contact-item-header">
+                            <span class="contact-icon"><i class="fas fa-phone"></i></span>
+                            <span class="contact-text">+7 (999) 123-45-67</span>
+                        </a>
+                        <li class="contact-item contact-item-footer">
+                            <span class="contact-icon"><i class="fas fa-map-marker-alt"></i></span>
+                            <span class="contact-text">Москва, ул. Промышленная, д. 15, корп. 3</span>
+                        </li>
+                        <a href="mailto:info@stellaji.ru" class="contact-item contact-item-footer contact-item-header">
+                            <span class="contact-icon"><i class="fas fa-envelope"></i></span>
+                            <span class="contact-text">info@stellaji.ru</span>
+                        </a>
+                    </ul>
+                    
+                    <!-- <div class="social-links">
+                        <a href="#" class="social-link social-link--telegram-footer" aria-label="Telegram">
+                            <i class="fab fa-telegram"></i>
+                        </a>
+                        <a href="#" class="social-link social-link--whatsapp-footer" aria-label="WhatsApp">
+                            <i class="fab fa-whatsapp"></i>
+                        </a>
+                        <a href="#" class="social-link social-link--viber-footer" aria-label="Viber">
+                            <i class="fab fa-viber"></i>
+                        </a>
+                      
+                    </div> -->
+                </div>
+            </div>
+            
+            <!-- Нижняя часть футера -->
+            <div class="footer-bottom">
+                <div class="footer-bottom-column">
+                    <p class="footer-copy">© 2025</p>
+                    <p class="footer-copy">ООО «КП СтеллажТрейд»</p>
+                    <p class="footer-copy">ИНН: 090234453232</p>
+                    <p class="footer-copy">КПП 123456789</p>
+                </div>
+                <div class="footer-bottom-column">
+                    <a href="#" class="footer-link">Политика конфиденциальности</a>
+                    <a href="#" class="footer-link">Правила обработки персональных данных</a>
+                    <a href="#" class="footer-link">Политика использования cookie</a>
+                </div>
+                <div class="footer-bottom-column design-credit">
+                    <a href="https://t.me/HQdesigner" class="footer-link">Дизайн сайта HQdesigner</a>
+                </div>
+                
+            </div>
+            <div class="footer-bottom-logo">
+                <img src="images/СтеллажТрейд.png" alt="" class="hero-bottom-logo-img">
+            </div>
+        </div>
+        
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Элементы DOM
+            const burgerBtn = document.getElementById('burgerBtn');
+            const mobileMenu = document.getElementById('mobileMenu');
+            const closeBtn = document.querySelector('.close-btn');
+            const navLinks = document.querySelectorAll('.nav__link');
+            
+            // Функция для переключения меню
+            function toggleMenu() {
+                const isExpanded = burgerBtn.getAttribute('aria-expanded') === 'true';
+                burgerBtn.setAttribute('aria-expanded', !isExpanded);
+                mobileMenu.setAttribute('aria-hidden', isExpanded);
+                mobileMenu.classList.toggle('active');
+                burgerBtn.classList.toggle('active');
+                document.body.style.overflow = isExpanded ? '' : 'hidden';
+            }
+            
+            // Обработчики событий
+            burgerBtn.addEventListener('click', toggleMenu);
+            closeBtn.addEventListener('click', toggleMenu);
+            
+            // Закрытие меню при клике на ссылку
+            navLinks.forEach(link => {
+                link.addEventListener('click', (e) => {
+                    // Для якорных ссылок предотвращаем стандартное поведение
+                    if (link.getAttribute('href').startsWith('#')) {
+                        e.preventDefault();
+                        const targetId = link.getAttribute('href');
+                        const target = document.querySelector(targetId);
+                        
+                        if (target) {
+                            window.scrollTo({
+                                top: target.offsetTop - 98,
+                                behavior: 'smooth'
+                            });
+                            
+                            // Обновляем URL без перезагрузки страницы
+                            history.replaceState(null, null, targetId);
+                        }
+                    }
+                    
+                    if (mobileMenu.classList.contains('active')) {
+                        toggleMenu();
+                    }
+                });
+            });
+            
+            // Закрытие меню при клике вне области
+            document.addEventListener('click', (e) => {
+                if (!mobileMenu.contains(e.target) && !burgerBtn.contains(e.target) && mobileMenu.classList.contains('active')) {
+                    toggleMenu();
+                }
+            });
+            
+            // Закрытие меню при нажатии Escape
+            document.addEventListener('keydown', (e) => {
+                if (e.key === 'Escape' && mobileMenu.classList.contains('active')) {
+                    toggleMenu();
+                }
+            });
+            
+            // Инициализация слайдера проектов
+            const projectsSwiper = new Swiper('#projects .swiper', {
+                loop: true,
+                spaceBetween: 20,
+                slidesPerView: 2,
+                centeredSlides: false,
+                autoplay: {
+                    delay: 40000,
+                    disableOnInteraction: false,
+                },
+                breakpoints: {
+                    320: {
+                        slidesPerView: 1,
+                        spaceBetween: 20
+                    },
+                    880: {
+                        slidesPerView: 2,
+                        spaceBetween: 20
+                    },
+                    1200: {
+                        slidesPerView: 2,
+                        spaceBetween: 20
+                    }
+                }
+            });
+            
+            // Инициализация слайдера отзывов
+            const reviewsSwiper = new Swiper('#reviews .swiper', {
+                loop: true,
+                slidesPerView: 2,
+                slidesPerGroup: 1,
+                spaceBetween: 20,
+                centeredSlides: false,
+                autoplay: {
+                    delay: 10000,
+                    disableOnInteraction: false,
+                },
+                navigation: false,
+                pagination: false,
+                breakpoints: {
+                    320: {
+                        slidesPerView: 1,
+                        slidesPerGroup: 1,
+                        spaceBetween: 10
+                    },
+                    768: {
+                        slidesPerView: 1,
+                        slidesPerGroup: 1,
+                        spaceBetween: 15
+                    },
+                    992: {
+                        slidesPerView: 2,
+                        slidesPerGroup: 1,
+                        spaceBetween: 20
+                    }
+                }
+            });
+            
+            // Динамическое вычисление высоты для секции стеллажей
+            function adjustRacksSection() {
+                const header = document.querySelector('.header');
+                const racksSection = document.querySelector('#racks');
+                const racksInfo = document.querySelector('.racks-info');
+                
+                if (racksSection && racksInfo) {
+                    const headerHeight = header.offsetHeight;
+                    racksSection.style.paddingTop = headerHeight + 'px';
+                    racksInfo.style.top = headerHeight + 'px';
+                    racksInfo.style.height = `calc(100vh - ${headerHeight}px)`;
+                }
+            }
+            
+            window.addEventListener('resize', adjustRacksSection);
+            adjustRacksSection();
+        });
+    </script>
+
+    
+    <script>
+document.addEventListener('DOMContentLoaded', function() {
+    const agreementCheckbox = document.getElementById('agreement-checkbox');
+    const submitBtn = document.querySelector('.submit-btn');
+    const formInputs = document.querySelectorAll('.form-input');
+    const agreementText = document.querySelector('.agreement-text');
+    const applicationForm = document.getElementById('application-form');
+
+    const popup = document.getElementById('success-popup');
+    const popupCloseBtn = document.getElementById('popup-close-btn');
+
+    // Сделать поля активными по умолчанию
+    formInputs.forEach(input => input.disabled = false);
+
+    // Кнопка выключена по умолчанию
+    submitBtn.disabled = true;
+
+    // Переключение состояния кастомного чекбокса и включение/выключение кнопки
+    function toggleCheckbox() {
+        agreementCheckbox.classList.toggle('active');
+        const isActive = agreementCheckbox.classList.contains('active');
+        submitBtn.disabled = !isActive;
+    }
+
+    agreementCheckbox.addEventListener('click', toggleCheckbox);
+
+    agreementText.addEventListener('click', function(e) {
+        if (e.target.tagName.toLowerCase() === 'a') return; // не переключать по клику на ссылки
+        toggleCheckbox();
+    });
+
+    applicationForm.addEventListener('submit', function(e) {
+        e.preventDefault();
+
+        // Показать попап с плавным появлением
+        popup.classList.add('active');
+
+        // Очистить форму и сбросить состояние кнопки и чекбокса
+        this.reset();
+        agreementCheckbox.classList.remove('active');
+        submitBtn.disabled = true;
+    });
+
+    // Закрыть попап при клике на кнопку "Закрыть"
+    popupCloseBtn.addEventListener('click', function() {
+        popup.classList.remove('active');
+    });
+
+    // Закрыть попап при клике вне области контента попапа
+    popup.addEventListener('click', function(e) {
+        if (e.target === popup) {
+            popup.classList.remove('active');
+        }
+    });
+});
+
+
+</script>
+
+    <script>
+  (function() {
+    const header = document.getElementById('header');
+    let lastScrollTop = 0;
+    let hideTimeout = null;
+    let idleTimeout = null;
+    let isHidden = false;
+    let scrollingDownStartedAt = null;
+
+    // Функция скрытия хедера (с анимацией CSS)
+    function hideHeader() {
+      if (!isHidden) {
+        header.classList.add('hidden');
+        isHidden = true;
+      }
+    }
+
+    // Функция показа хедера
+    function showHeader() {
+      if (isHidden) {
+        header.classList.remove('hidden');
+        isHidden = false;
+      }
+    }
+
+    // Функция отмены таймеров
+    function clearTimers() {
+      if (hideTimeout) {
+        clearTimeout(hideTimeout);
+        hideTimeout = null;
+      }
+      if (idleTimeout) {
+        clearTimeout(idleTimeout);
+        idleTimeout = null;
+      }
+    }
+
+    // Обработчик скролла
+    window.addEventListener('scroll', () => {
+      const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+
+      // Очистим idle таймер (отслеживание паузы скролла)
+      if (idleTimeout) {
+        clearTimeout(idleTimeout);
+        idleTimeout = null;
+      }
+
+      // Определяем направление скролла
+      const scrollingDown = scrollTop > lastScrollTop;
+
+      if (scrollingDown) {
+        // Если скролл вниз начался только что, запускаем таймер на 2.5 секунды
+        if (!scrollingDownStartedAt) {
+          scrollingDownStartedAt = Date.now();
+
+          // Отменяем показ хедера, если он сейчас виден
+          showHeader();
+
+          // Запускаем таймер, который скроет хедер через 2.5 секунды с момента начала скролла вниз
+          hideTimeout = setTimeout(() => {
+            hideHeader();
+            hideTimeout = null;
+          }, 2500);
+        }
+        // Скроллим вниз — сбрасываем idle таймер, чтобы не показывать хедер раньше времени
+      } else {
+        // Скролл вверх или без изменения позиции
+        // Очищаем таймер скрытия хедера, показываем хедер сразу
+        scrollingDownStartedAt = null;
+        if (hideTimeout) {
+          clearTimeout(hideTimeout);
+          hideTimeout = null;
+        }
+        showHeader();
+      }
+
+      // Запускаем таймер, чтобы показать хедер, если не было прокрутки 5 секунд
+      idleTimeout = setTimeout(() => {
+        showHeader();
+        scrollingDownStartedAt = null;
+        hideTimeout = null;
+      }, 5000);
+
+      lastScrollTop = scrollTop <= 0 ? 0 : scrollTop;
+    });
+  })();
+</script>
+</body>
+</html>

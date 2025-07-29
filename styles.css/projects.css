@@ -1,0 +1,179 @@
+/* Секция "Наши проекты" */
+        .projects-section {
+            /* padding-top: 40px; */
+        }
+
+        .section-title-projects {
+            color: var(--color-dark);
+            font-size: var(--fs-xxxl);
+            font-weight: 600;
+            line-height: 1.1;
+            text-transform: uppercase;
+            max-width: 100%;
+        }
+        
+        .project-slider-container {
+            position: relative;
+            padding: 20px 0;
+            width: 100%;
+            overflow: hidden;
+        }
+        
+        .swiper {
+            width: 100%;
+            padding: 20px 0;
+        }
+        
+        .swiper-wrapper {
+            display: flex;
+            align-items: stretch;
+        }
+        
+        .swiper-slide {
+            width: calc((100% - 40px) / 3);
+            height: auto;
+            display: flex;
+        }
+        
+        .project-slide {
+            width: 100%;
+            height: 454px;
+            background: var(--color-white);
+            border-radius: var(--radius-xl);
+            overflow: hidden;
+            box-shadow: var(--shadow-card);
+            display: flex;
+            flex-direction: column;
+            transition: box-shadow var(--transition-normal);
+        }
+        
+        .project-slide:hover {
+            box-shadow: var(--shadow-card-hover);
+        }
+        
+        .project-image {
+            width: 100%;
+            height: 320px;
+            overflow: hidden;
+            position: relative;
+            border-radius: 24px;
+        }
+        
+        .project-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.5s ease;
+        }
+        
+        .project-image:hover img {
+            transform: scale(1.05);
+        }
+        
+        .project-content {
+            padding: 20px;
+            flex-grow: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+        
+        .project-title {
+            font-size: var(--fs-xl);
+            font-weight: 600;
+            margin-bottom: 10px;
+            color: var(--color-dark);
+            line-height: 1.2;
+        }
+        
+        .project-description {
+            font-size: var(--fs-base);
+            line-height: 1.5;
+            color: var(--color-dark);
+            margin-top: 10px;
+        }
+
+         @media (max-width: 1200px) {
+            .section-title-projects {
+                font-size: var(--fs-xxl);
+            }            
+                        
+            .swiper-slide {
+                width: calc((100% - 20px) / 2);
+            }       
+            
+        }
+ @media (max-width: 880px) {
+                        
+                        
+            .swiper-slide {
+                width: calc((100% - 20px) / 1);
+            }  
+            .section-title-projects {
+                font-size: var(--fs-xxl);
+            }
+            .project-slider-container {
+                height: 454px;
+            }   
+            .project-slide {
+            width: 100%;
+            height: 300px;
+            background-color: #dbe0e6;            
+        }  
+            .project-image {
+            width: 100%;
+            height: 400px;
+          
+        }
+        
+        .project-image img {
+            width: 100%;
+            height: 100%;           
+        }
+        .project-content {
+            padding: 0 10px;
+        }
+            
+        }
+
+
+
+         @media (max-width: 768px) { 
+            .project-slider-container {
+                padding: 0;
+            }
+            .project-slide {
+                height: 450px;
+            }            
+            .project-image {
+                height: 420px;
+            }
+        }
+
+         @media (max-width: 576px) {
+      
+            .project-slide {
+                height: 300px;
+            }
+            
+            .project-image {
+                height: 200px;
+            }
+            
+            .project-title {
+                font-size: var(--fs-large);
+            }
+        }
+           
+        @media (max-width:576px) {
+            .project-slide {
+                height: 380px;
+            }
+            .project-image {
+                height: 315px;
+            }
+            #projects {
+                margin-bottom: 0;
+            }
+
+        }

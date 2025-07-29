@@ -1,0 +1,77 @@
+/* Секция "Наши преимущества" */
+        .benefits-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+        }
+        
+        .benefit-card {
+            background: var(--color-white);
+            border-radius: var(--radius-md);
+            padding: 20px;
+            box-shadow: var(--shadow-card);
+            transition: transform var(--transition-normal), box-shadow var(--transition-normal);
+            display: flex;
+            flex-direction: column;
+        }
+        
+        .benefit-card:hover {
+            transform: translateY(-10px);
+            box-shadow: var(--shadow-card-hover);
+        }
+        
+        .benefit-icon {
+            width: 83px;
+            height: 83px;
+            /* background: var(--color-dark-secondary); */
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 20px;
+            font-size: var(--fs-xxl);
+            color: var(--color-white);
+            border-radius: 50%;
+        }
+        
+        .benefit-title {
+            color: var(--color-dark);
+            font-size: 22px;
+            font-weight: 600;
+            margin-bottom: 20px;
+            line-height: 1.2;
+        }
+        
+        .benefit-description {
+            color: var(--color-dark);
+            font-size: 18px;
+            font-weight: 400;
+            line-height: 1.5;
+        }
+
+         @media (max-width: 1200px) {
+                        
+            .benefits-grid {
+                grid-template-columns: repeat(2, 1fr);
+                justify-items: center;
+            }
+        }
+
+         @media (max-width: 992px) {         
+           .benefits-grid {
+                grid-template-columns: repeat(2, 4fr);
+            }
+        }
+
+        @media (max-width: 880px) {
+            .benefits-grid {
+                grid-template-columns: repeat(2, 2fr);
+            }
+        }  
+        @media (max-width:576px) {
+            .benefits-grid {
+                grid-template-columns: repeat(1, 2fr);
+            }
+            
+        }         
+            
+        
