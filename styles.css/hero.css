@@ -9,7 +9,7 @@
             height: 100dvh;
             /* height: auto; */
             min-height: 800px;
-            background: url('/images/Main-desktop-clear.png') no-repeat center bottom/cover;
+            background: url('../images/Main-desktop-clear.png') no-repeat center bottom/cover;
             align-items: center;
             padding-top: 98px;            
             margin-bottom: 160px; 
