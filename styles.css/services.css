@@ -92,7 +92,8 @@ margin-bottom: 62px;
                 padding: var(--space-lg);
                 display: flex;
                 flex-wrap: wrap;
-                column-gap: 175px;
+/*                 column-gap: 175px; */
+               justify-content: space-between;
             }
              .services-header {
                 flex-basis: 100%;
