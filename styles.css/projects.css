@@ -16,6 +16,7 @@
             position: relative;
             padding: 20px 0;
             width: 100%;
+            max-height: 494px;
             overflow: hidden;
         }
         
@@ -36,15 +37,17 @@
         }
         
         .project-slide {
-            width: 100%;
-            height: 454px;
-            background: var(--color-white);
-            border-radius: var(--radius-xl);
-            overflow: hidden;
-            box-shadow: var(--shadow-card);
-            display: flex;
-            flex-direction: column;
-            transition: box-shadow var(--transition-normal);
+           width: 100%;
+    /* height: 454px; */
+    /* background: var(--color-white); */
+    border-radius: var(--radius-xl);
+    overflow: hidden;
+    /* box-shadow: var(--shadow-card); */
+    display: flex
+;
+    flex-direction: column;
+    /* transition: box-shadow var(--transition-normal); */
+    border-radius: 24px 24px 0 0;
         }
         
         .project-slide:hover {
@@ -53,7 +56,7 @@
         
         .project-image {
             width: 100%;
-            height: 320px;
+            height: 355px;
             overflow: hidden;
             position: relative;
             border-radius: 24px;
@@ -71,7 +74,7 @@
         }
         
         .project-content {
-            padding: 20px;
+           
             flex-grow: 1;
             display: flex;
             flex-direction: column;
@@ -93,6 +96,82 @@
             margin-top: 10px;
         }
 
+       /* Обязательно позиционируем project-image относительно для позиционирования стрелок */
+/* .project-image {
+    position: relative;
+} */
+
+/* Навигационные стрелки */
+.swiper-button-prev,
+.swiper-button-next {
+    /* position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 50px;
+    padding: 5%;
+    border-radius: 50%;
+    background-color: aliceblue;
+    opacity: 0.75;
+    cursor: pointer;
+    transition: opacity .2s ease-in-out; */
+    margin-top: calc(-50px - (var(--swiper-navigation-size) / 2));
+    
+}
+ .swiper-button-prev,
+.swiper-button-next {
+  color: #333; /* темно-серый цвет стрелок */
+  width: 30px;
+  height: 100%;
+  /* background: rgba(255,255,255,0.15);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px); */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  
+}
+
+/* Сдвиг влево и вправо */
+.swiper-button-prev {
+    left: 10px;
+}
+
+.swiper-button-next {
+    right: 10px;
+}
+
+/* Фон стрелок при наведении становится ярче */
+.button-prev:after,
+.button-next:after {
+    color: aliceblue;
+    font-size: 80px;
+    opacity: 0.9;
+}
+
+/* Стрелки - символы */
+.swiper-button-prev::after,
+.swiper-button-next::after {
+    font-family: Arial, sans-serif;
+    font-weight: bold;
+    font-size: 80px;
+    color: #fff;
+   
+    margin-top: calc(-50px - (var(--swiper-navigation-size) / 2));
+}
+
+/* Левая стрелка */
+.swiper-button-prev::after {
+    content: '‹';
+}
+
+/* Правая стрелка */
+.swiper-button-next::after {
+    content: '›';
+}
+
+
          @media (max-width: 1200px) {
             .section-title-projects {
                 font-size: var(--fs-xxl);
@@ -113,7 +192,7 @@
                 font-size: var(--fs-xxl);
             }
             .project-slider-container {
-                height: 454px;
+               max-height: 454px;
             }   
             .project-slide {
             width: 100%;
@@ -173,7 +252,7 @@
                 height: 315px;
             }
             #projects {
-                margin-bottom: 0;
+                margin-bottom: 40px;
             }
 
         }
