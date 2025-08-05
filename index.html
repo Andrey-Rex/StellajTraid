@@ -13,6 +13,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+
     
 </head>
 <body>
@@ -59,15 +61,16 @@
                 
                 <a href="mailto:info@stellaji.ru" class="contact-item-header">
                     <span class="contact-item-icon" aria-hidden="true">
-                        <img src="images/Mail.svg" alt="mail logo"></span>
-                    <span class="mail-text">info@stellaji.ru</span>
+                        <img src="images/Mail.svg" alt="mail logo">
+                    </span>
+                    <span class="mail-text">Sib_stelltrad@mail.ru</span>
                 </a>
                 
                 <a href="tel:+79991234567" class="contact-item-header">
                     <span class="contact-item-icon" aria-hidden="true">
                         <img src="images/Phone.svg" alt="phone logo">
                     </span>
-                    <span class="phone-text">+7 (999) 123-45-67</span>
+                    <span class="phone-text">+7-913-7-54-52-88</span>
                 </a>
             </div>
             
@@ -81,8 +84,13 @@
     
     <!-- Мобильное меню (скрыто по умолчанию) -->
     <div class="mobile-menu" id="mobileMenu" aria-hidden="true">
-        <button class="close-btn" aria-label="Закрыть меню">&times;</button>
-         <nav class="nav" aria-label="Мобильная навигация">
+        <div class="mobile-inner-wrapper">
+            <button class="close-btn" aria-label="Закрыть меню">&times;</button>
+            <a href="#" class="logo" aria-label="STELLAJI - главная страница">
+                <img src="images/logo.svg" alt="STELLAJI" width="154" height="58">
+            </a>
+        </div>
+        <nav class="nav" aria-label="Мобильная навигация">
             <ul class="nav__list">
                 <li><a href="#services" class="nav__link">Услуги</a></li>
                 <!-- <li><a href="#racks" class="nav__link">Виды стеллажей</a></li> -->
@@ -93,13 +101,13 @@
                     <span class="contact-item-icon" aria-hidden="true">
                         <img src="images/Mail.svg" alt="mail logo">
                     </span>
-                    <span class="mail-text-burger">info@stellaji.ru</span>
+                    <span class="mail-text-burger">Sib_stelltrad@mail.ru</span>
                 </a></li>
                 <li><a href="tel:+79991234567" class="contact-item-header">
                     <span class="contact-item-icon" aria-hidden="true">
                         <img src="images/Phone.svg" alt="phone logo">
                     </span>
-                    <span class="phone-text-burger">+7 (999) 123-45-67</span>
+                    <span class="phone-text-burger">+7-913-7-54-52-88</span>
                 </a></li>
                 <!-- <li> <a href="#contact-form" class="btn btn--primary btn--header">Оставить заявку</a></li> -->
             </ul>
@@ -111,7 +119,7 @@
         <section class="hero" aria-labelledby="hero-heading">  
             <div class="section-container hero-container">
                 <div class="hero__content">
-                    <p class="hero__subtitle">НАДЁЖНОСТЬ И ЭФФЕКТИВНОСТЬ КЛЮЧЕВЫЕ ФАКТОРЫ УСПЕХА</p>
+                    <p class="hero__subtitle">НАДЁЖНОСТЬ И ЭФФЕКТИВНОСТЬ — КЛЮЧЕВЫЕ ФАКТОРЫ УСПЕХА</p>
                     <h1 id="hero-heading" class="hero__title">
                         <span>СКЛАДСКИЕ СТЕЛЛАЖИ —</span>
                         <span>ОТ ПРОЕКТА ДО МОНТАЖА</span>
@@ -162,7 +170,7 @@
                             <img src="images/montaj.svg" alt="montaj Icon">
                         </div>
                         <h3 class="card__title">Монтаж</h3>
-                        <p class="card__description">Опытные бригады. Строгое соблюдение ГОСТов и норм безопасности и соответсвие проекта.</p>
+                        <p class="card__description">Опытные бригады. Строгое соблюдение ГОСТов и норм безопасности и соответствие проекта.</p>
                     </article>
                 </div>
             </div>
@@ -214,7 +222,7 @@
                         <div class="rack-card">
                             <div class="rack-card-content">
                                 <h3 class="rack-card-title">Мезонинные стеллажи</h3>
-                                <p class="rack-card-text">Это многоуровневые стеллажные системы полочного или платформенного вида, предназначенные для хранения товаров различного назначения. Многоэтажная конструкция позволяет эффективно использовать площадь складского помещения. Разные уровни мезонина соединяются с помощью лестниц или целых лестничных пролётов. Такая стеллажная система является сборно-разборной, легко монтируется и может быть изменена под новые виды грузов в короткий срок.</p>
+                                <p class="rack-card-text">Это многоуровневые стеллажные системы полочного или платформенного вида, предназначенные для хранения товаров различного назначения. Многоэтажная конструкция позволяет эффективно использовать площадь складского помещения. Разные уровни мезонина соединяются с помощью лестниц или лестничных пролётов. Такая стеллажная система является сборно-разборной, легко монтируется и может быть изменена под новые виды грузов в короткий срок.</p>
                             </div>
                             <div class="rack-card-image">
                                 <img src="images/mezon.jpg" alt="Мезонинные стеллажи">
@@ -225,7 +233,7 @@
                         <div class="rack-card">
                             <div class="rack-card-content">
                                 <h3 class="rack-card-title">Набивные (глубинные) стеллажи</h3>
-                                <p class="rack-card-text">Эти стеллажи идеально подходит для предприятий с ограниченным пространством и необходимостью хранения больших объёмов одинаковых и однотипных грузов с высокой плотностью.</p>
+                                <p class="rack-card-text">Эти стеллажи идеально подходят для предприятий с ограниченным пространством и необходимостью хранения больших объёмов одинаковых и однотипных грузов с высокой плотностью.</p>
                             </div>
                             <div class="rack-card-image">
                                 <img src="images/nabiv.jpg" alt="Набивные стеллажи">
@@ -236,7 +244,7 @@
                         <div class="rack-card">
                             <div class="rack-card-content">
                                 <h3 class="rack-card-title">Консольные стеллажи</h3>
-                                <p class="rack-card-text">Оптимальный вариант для хранения длинномерных грузов, таких как трубы, профили, доски, рулоны ткани и многое другое. Конструкция обеспечивает удобный доступ к каждой единице продукции.</p>
+                                <p class="rack-card-text">Оптимальный вариант для хранения длинномерных грузов, таких как трубы, профили, доски, рулоны ткани и многое другое. Конструкция обеспечивает прямой доступ к каждой единице продукции.</p>
                             </div>
                             <div class="rack-card-image">
                                 <img src="images/console.jpg" alt="Консольные стеллажи">
@@ -353,7 +361,7 @@
                                 <div class="swiper-slide">
                                     <article class="project-slide">
                                         <div class="project-image">
-                                            <img src="images/project3.jpg" alt="Фармацевтический склад">
+                                            <img src="images/project1.png" alt="Фармацевтический склад">
                                         </div>
                                         <div class="project-content">
                                             <!-- <h3 class="project-title">Фармацевтический склад "ФармЛогист"</h3> -->
@@ -366,7 +374,7 @@
                                 <div class="swiper-slide">
                                     <article class="project-slide">
                                         <div class="project-image">
-                                            <img src="images/project4.jpg" alt="Торговый центр">
+                                            <img src="images/project2.png" alt="Торговый центр">
                                         </div>
                                         <div class="project-content">
                                             <!-- <h3 class="project-title">Торговый центр "МегаМолл"</h3> -->
@@ -379,10 +387,10 @@
                                 <div class="swiper-slide">
                                     <article class="project-slide">
                                         <div class="project-image">
-                                            <img src="images/project5.jpg" alt="Автоцентр">
+                                            <img src="images/project1.png" alt="Автоцентр">
                                         </div>
                                         <div class="project-content">
-                                            <h3 class="project-title">Автоцентр "МоторСити"</h3>
+                                            <!-- <h3 class="project-title">Автоцентр "МоторСити"</h3> -->
                                             <p class="project-description">Стеллажи для хранения автозапчастей и шин</p>
                                         </div>
                                     </article>
@@ -392,16 +400,19 @@
                                 <div class="swiper-slide">
                                     <article class="project-slide">
                                         <div class="project-image">
-                                            <img src="images/project6.jpg" alt="Пищевое производство">
+                                            <img src="images/project2.png" alt="Пищевое производство">
                                         </div>
                                         <div class="project-content">
-                                            <h3 class="project-title">Пищевое производство "ВкусВилл"</h3>
+                                            <!-- <h3 class="project-title">Пищевое производство "ВкусВилл"</h3> -->
                                             <p class="project-description">Специализированные стеллажи для хранения пищевых продуктов</p>
                                         </div>
                                     </article>
                                 </div>
                             </div>
                         </div>
+                        <div class="swiper-button-prev"></div>
+                        <div class="swiper-button-next"></div>
+
                     </div>
                 </div>
             </div>
@@ -431,7 +442,7 @@
                 <!-- Блок с цитатой и фото -->
                 <div class="quote-block">
                     <div class="quote-image">
-                        <img src="images/about-company2.png" alt="Надежда, директор компании">
+                        <img src="images/nadejda.jpg" alt="Надежда, директор компании">
                     </div>
                     <div class="quote-text">
                         <p>«Я, Надежда…, как директор компании, могу с уверенностью сказать: надёжность — это не просто обещание, это фундамент всего, что мы делаем. От первого звонка до финального монтажа мы строим не просто стеллажи, мы строим доверие.</p>
@@ -561,6 +572,7 @@
 
          <!-- Секция "Оставьте заявку" -->
         <section id="contact-form" class="contact-section" aria-labelledby="contact-heading">
+            <h2>gt</h2>
             <div class="section-container">
                 <div class="contact-container">
                     <!-- Левая часть: текстовые блоки -->
@@ -646,7 +658,7 @@
                     <ul class="footer-contacts">
                         <a href="tel:+79991234567" class="contact-item contact-item-footer contact-item-header">
                             <span class="contact-icon"><i class="fas fa-phone"></i></span>
-                            <span class="contact-text">+7 (999) 123-45-67</span>
+                            <span class="contact-text">+7-913-7-54-52-88</span>
                         </a>
                         <li class="contact-item contact-item-footer">
                             <span class="contact-icon"><i class="fas fa-map-marker-alt"></i></span>
@@ -654,7 +666,7 @@
                         </li>
                         <a href="mailto:info@stellaji.ru" class="contact-item contact-item-footer contact-item-header">
                             <span class="contact-icon"><i class="fas fa-envelope"></i></span>
-                            <span class="contact-text">info@stellaji.ru</span>
+                            <span class="contact-text">Sib_stelltrad@mail.ru</span>
                         </a>
                     </ul>
                     
@@ -677,17 +689,17 @@
             <div class="footer-bottom">
                 <div class="footer-bottom-column">
                     <p class="footer-copy">© 2025</p>
-                    <p class="footer-copy">ООО «КП СтеллажТрейд»</p>
-                    <p class="footer-copy">ИНН: 090234453232</p>
-                    <p class="footer-copy">КПП 123456789</p>
+                    <p class="footer-copy">ООО «ПК СтеллажТрейд»</p>
+                    <p class="footer-copy">ИНН 5405014836</p>
+                    <p class="footer-copy"> КПП 540501001</p>
                 </div>
                 <div class="footer-bottom-column">
-                    <a href="#" class="footer-link">Политика конфиденциальности</a>
-                    <a href="#" class="footer-link">Правила обработки персональных данных</a>
-                    <a href="#" class="footer-link">Политика использования cookie</a>
+                    <a href="privacy-policy.html" target="_blank" rel="noopener noreferrer" class="footer-link">Политика конфиденциальности</a>
+                    <a href="personal-data-processing-rules.html" target="_blank" rel="noopener noreferrer" class="footer-link">Правила обработки персональных данных</a>
+                    <a href="cookie-policy.html" target="_blank" rel="noopener noreferrer" class="footer-link">Политика использования cookie</a>
                 </div>
                 <div class="footer-bottom-column design-credit">
-                    <a href="https://t.me/HQdesigner" class="footer-link">Дизайн сайта HQdesigner</a>
+                    <a href="https://t.me/HQdesigner" class="footer-link designer-link">Дизайн сайта: HQdesigner</a>
                 </div>
                 
             </div>
@@ -763,29 +775,29 @@
             
             // Инициализация слайдера проектов
             const projectsSwiper = new Swiper('#projects .swiper', {
-                loop: true,
-                spaceBetween: 20,
-                slidesPerView: 2,
-                centeredSlides: false,
-                autoplay: {
-                    delay: 4000,
-                    disableOnInteraction: false,
-                },
-                breakpoints: {
-                    320: {
-                        slidesPerView: 1,
-                        spaceBetween: 20
-                    },
-                    880: {
-                        slidesPerView: 2,
-                        spaceBetween: 20
-                    },
-                    1200: {
-                        slidesPerView: 2,
-                        spaceBetween: 20
-                    }
-                }
-            });
+    loop: true,
+    spaceBetween: 20,
+    slidesPerView: 2,
+    centeredSlides: false,
+    navigation: {
+        nextEl: '#projects .swiper-button-next',
+        prevEl: '#projects .swiper-button-prev',
+    },
+    breakpoints: {
+        320: {
+            slidesPerView: 1,
+            spaceBetween: 20
+        },
+        880: {
+            slidesPerView: 2,
+            spaceBetween: 20
+        },
+        1200: {
+            slidesPerView: 2,
+            spaceBetween: 20
+        }
+    }
+});
             
             // Инициализация слайдера отзывов
             const reviewsSwiper = new Swiper('#reviews .swiper', {
@@ -985,5 +997,16 @@ document.addEventListener('DOMContentLoaded', function() {
     });
   })();
 </script>
+
+// ленивая загрузка всех изображений
+<script>
+document.querySelectorAll('img').forEach(img => {
+  img.setAttribute('loading', 'lazy');
+});
+</script>
+<script>
+
+</script>
+
 </body>
 </html>
