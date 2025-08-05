@@ -3,6 +3,7 @@
             background-color: var(--color-light);
             padding: var(--space-xxxl) 0;
                 margin-bottom: 100px;
+         margin-top: 80px;
         }
         
         .contact-container {
@@ -314,4 +315,5 @@
                 font-size: 18px;
                 height: 50px;
             }
+
         }
