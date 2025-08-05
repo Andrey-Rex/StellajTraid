@@ -154,7 +154,7 @@
         
         .footer-link {
             color: #9eadbf;
-            text-decoration: none;
+            text-decoration: underline;
             transition: color var(--transition-fast);
             display: inline-block;
         }
@@ -164,7 +164,7 @@
         }
         
         .design-credit {
-            /* text-align: right; */
+            text-decoration: none;
         }
 
         
@@ -231,11 +231,12 @@
         }
         .design-credit {
             font-size: 12px;
-            text-decoration: underline;
+            
         }
         .footer-logo {
             margin-bottom: 0;
         }
         }
+
 
         
