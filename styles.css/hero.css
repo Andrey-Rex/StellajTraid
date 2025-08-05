@@ -152,10 +152,18 @@
                 font-size: var(--fs-medium);
                 padding: 6px 10px;
                 height: 44px;
-            }
-
-            
+            }          
             
            
         }
+        @media (max-width: 360px) {
+            .hero-btn {
+                font-size: var(--fs-small);
+            }
+            .logo {
+        width: 75px;
+       
+    }        
+        }
+    
         
